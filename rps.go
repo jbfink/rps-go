@@ -7,6 +7,7 @@ import (
 )
 
 func main() {
+	choices := [3]string{"r", "p", "s"}
 	seed := rand.NewSource(time.Now().UnixNano())
 	random := rand.New(seed)
 	choice1 := random.Intn(3)
