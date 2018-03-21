@@ -1,3 +1,7 @@
+/*
+This will eventually be a Rock, Paper, Scissors program in Go.
+*/
+
 package main
 
 import (
