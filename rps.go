@@ -1,7 +1,6 @@
 /*
 This will eventually be a Rock, Paper, Scissors program in Go.
 */
-
 package main
 
 import (
@@ -21,3 +20,5 @@ func main() {
 	fmt.Println("Your guess is", choices[choice2])
 
 }
+
+// BUG(jbfink): This is actually not playable (yet).
