@@ -4,11 +4,24 @@ This will eventually be a Rock, Paper, Scissors program in Go.
 package main
 
 import (
+	"bufio"
 	"fmt"
 	"math/rand"
+	"os"
+	"strings"
 	"time"
 )
 
+func input() {
+	guess := bufio.NewReader(os.Stdin)
+	for {
+		fmt.Print("-> ")
+		text, _ := guess.ReadString('\n')
+		// convert CRLF to LF
+		text = strings.Replace(guess, "\n", "", -1)
+
+	}
+}
 func main() {
 	choices := [3]string{"r", "p", "s"}
 	seed := rand.NewSource(time.Now().UnixNano())
