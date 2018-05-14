@@ -18,7 +18,7 @@ func input() {
 		fmt.Print("-> ")
 		text, _ := guess.ReadString('\n')
 		// convert CRLF to LF
-		text = strings.Replace(guess, "\n", "", -1)
+		text = strings.Replace(text, "\n", "", -1)
 
 	}
 }
